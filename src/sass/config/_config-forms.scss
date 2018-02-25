@@ -1,0 +1,45 @@
+// ======================================================================
+// Form Complete Skin
+// ======================================================================
+
+/// Custom Radio & Check Boxes
+/// ---------------------------------------------------------------------
+
+$form-skin-default: (
+  /// Components
+  components: (
+    baseform: true,
+    inputs: true,
+    addons: true,
+    select: true,
+    validation: true
+  ),
+  /// Form Element
+  form: (
+    margin: 0 0 0 0,
+    padding: 0 27px,
+    color: $dark,
+  ),
+  /// Legend Element
+  legend: (
+    margin: 0 0 27px 0,
+    line-height: $global-line-height,
+  ),
+  /// Fieldset Element
+  fieldset: (
+    margin: 0 0 $gutter-width,
+    padding: 0 0 $gutter-width,
+  ),
+  /// Label Elements
+  labels: (
+    color: $dark,
+    spacing: 0 0 0 0,
+  ),
+  /// Skins
+  skins: (
+    inputs: $input-default,
+    addons: $addon-default,
+    select: $select-default,
+    validation: $validation-default,
+  ),
+);

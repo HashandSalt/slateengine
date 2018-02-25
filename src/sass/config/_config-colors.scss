@@ -1,0 +1,35 @@
+// ======================================================================
+// Colors
+// ======================================================================
+
+/// Monochrome - Bright
+$bright: #eee;
+/// Monochrome - Gray
+$gray: #9f9f9f;
+/// Monochrome - Dark
+$dark: #414141;
+/// Monochrome - Jet
+$jet: #000;
+
+/// Palette - Primary
+$primary: #96def0;
+/// Palette - Secondary
+$secondary: #2980b9;
+/// Palette - Secondary
+$tertiary: #8e44ad;
+
+/// Feedback - Positive
+$positive: #2ecc71;
+/// Feedback - Negative
+$negative: #971318;
+/// Feedback - Warning
+$warning: #f39c12;
+// Feedback - Disabled
+$disabled: #adadad;
+
+/// Gradient - Start
+$gradient-start: $primary;
+/// Gradient - Middle
+$gradient-middle: darken($primary, 20%);
+/// Gradient - End
+$gradient-end: darken($primary, 40%);

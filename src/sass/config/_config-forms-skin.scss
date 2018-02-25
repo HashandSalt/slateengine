@@ -1,0 +1,230 @@
+// ======================================================================
+// Form Skins
+// ======================================================================
+
+/// Inputs
+/// ----------------------------------------------------------------------
+
+/// Default Input Theme
+$input-default: (
+
+  use-borders: true,
+
+  textlight: $bright,
+  textdark: $dark,
+
+  width: 100%,
+  height: 54px,
+
+  margin: 0 0 27px 0,
+  padding: 12px,
+
+  font: inherit,
+  font-size: $global-base-font-size,
+  line-height: $global-line-height,
+
+  background-color: #fff,
+  background-color-focus: #eee,
+  background-color-disabled: $medium,
+
+  border-left: 2px solid $medium,
+  border-right: 2px solid $medium,
+  border-top: 2px solid $medium,
+  border-bottom: 2px solid $medium,
+
+  border-focus-left: 2px solid $dark,
+  border-focus-right: 2px solid $dark,
+  border-focus-top: 2px solid $dark,
+  border-focus-bottom: 2px solid $dark,
+
+  border-disabled-left: 2px solid darken($disabled, 20%),
+  border-disabled-right: 2px solid darken($disabled, 20%),
+  border-disabled-top: 2px solid darken($disabled, 20%),
+  border-disabled-bottom: 2px solid darken($disabled, 20%),
+
+  check-radio-margin: 8px,
+
+);
+
+
+/// Custom Select Elements
+/// ----------------------------------------------------------------------
+
+/// Defualt Select Theme
+$select-default: (
+
+  use-borders: true,
+
+  height: 54px,
+  width: 100%,
+  margin: 0 0 27px 0,
+  padding: 12px,
+  radius: 0,
+
+  textlight: $bright,
+  textdark: $dark,
+  font: inherit,
+  font-size: $global-base-font-size,
+
+  border-left: 2px solid $medium,
+  border-right: 2px solid $medium,
+  border-top: 2px solid $medium,
+  border-bottom: 2px solid $medium,
+
+  border-focus-left: 2px solid $dark,
+  border-focus-right: 2px solid $dark,
+  border-focus-top: 2px solid $dark,
+  border-focus-bottom: 2px solid $dark,
+
+  border-disabled-left: 2px solid darken($disabled, 10%),
+  border-disabled-right: 2px solid darken($disabled, 10%),
+  border-disabled-top: 2px solid darken($disabled, 10%),
+  border-disabled-bottom: 2px solid darken($disabled, 10%),
+
+  arrow: '<svg xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M.758.57h10l-5 5z" fill-rule="evenodd"/></svg>',
+  triangle-color-dark: $dark,
+  triangle-color-light: $medium,
+  triangle-size: 11px 6px,
+  triangle-position: 98% center,
+
+  background-color: #fff,
+  background-color-focus: #eee,
+  background-color-disabled: $disabled,
+
+);
+
+/// Select Addon
+$select-addon: (
+
+  use-borders: true,
+
+  height: 54px,
+  width: 100%,
+  margin: 0 0 27px 0,
+  padding: 12px,
+  radius: 0,
+
+  textlight: $bright,
+  textdark: $dark,
+  font: inherit,
+  font-size: $global-base-font-size,
+
+  border-left: 2px solid $medium,
+  border-right: 2px solid $medium,
+  border-top: 2px solid $medium,
+  border-bottom: 2px solid $medium,
+
+  border-focus-left: 2px solid $dark,
+  border-focus-right: 2px solid $dark,
+  border-focus-top: 2px solid $dark,
+  border-focus-bottom: 2px solid $dark,
+
+  border-disabled-left: 2px solid darken($disabled, 10%),
+  border-disabled-right: 2px solid darken($disabled, 10%),
+  border-disabled-top: 2px solid darken($disabled, 10%),
+  border-disabled-bottom: 2px solid darken($disabled, 10%),
+
+  triangle-color: $dark,
+  triangle-size: 9px 6px,
+  triangle-position: 98% center,
+
+  background-color: $primary,
+  background-color-focus: #eee,
+  background-color-disabled: $disabled,
+
+);
+
+
+/// Addons
+/// ----------------------------------------------------------------------
+
+/// Defualt Addon Theme
+$addon-default: (
+
+    use-borders: true,
+
+    textlight: $bright,
+    textdark: $dark,
+
+    font: inherit,
+    font-size: 24px,
+    font-weight: $semibold,
+    line-height: 48px,
+
+    padding: 0 0 0 0,
+    spacing: 0 0 27px 0,
+    height: 54px,
+
+    border: 2px solid $medium,
+    border-focus: 2px solid $dark,
+
+    input-focus: $medium,
+    input-focus-color: #fff,
+
+    addon-background-color: $primary,
+    addon-hover: darken($dark, 15%),
+    addon-focus: darken($dark, 15%),
+    addon-active: darken($dark, 15%),
+    addon-disabled: #adadad,
+
+    // Classes
+    wrapper: 'form-addon',
+    icon: 'addon-icon',
+    button: 'addon-button',
+    field: 'addon-field',
+    left: 'addon-left',
+    right: 'addon-right',
+    both: 'addon-both',
+
+    // Select Skin
+    selectskin: $select-default,
+
+);
+
+
+/// Custom Radio & Check Boxes
+/// ----------------------------------------------------------------------
+
+$checkradio-default: (
+
+    use-borders: true,
+
+    checkicon: '<svg xmlns="http://www.w3.org/2000/svg"><path d="M4.932 14.594c-.223-.486-.36-.79-.409-.913l-.567-1.3c-.174-.4-.323-.726-.447-.978l-.344-.692C2.502 9.408 1.718 8.488.812 7.953c1.06-.885 2.006-1.328 2.837-1.328.552 0 .986.211 1.302.632.316.421.586 1.151.809 2.19 1.612-3.03 2.867-5.124 3.766-6.28.806-1.04 1.496-1.728 2.07-2.066.573-.338 1.334-.507 2.282-.507.595 0 1.24.113 1.934.341-1.618 1.051-3.383 2.78-5.296 5.183-1.912 2.404-3.774 5.23-5.584 8.476z" fill="#000000" fill-rule="evenodd"/></svg>',
+    checkicon-size: 15px 14px,
+    radioicon: '<svg xmlns="http://www.w3.org/2000/svg"><circle fill="#000000" cx="5" cy="5" r="5" fill-rule="evenodd"/></svg>',
+    radioicon-size: 10px 10px,
+
+    spacing: 36px,
+
+    width: 36px,
+    height: 36px,
+
+    selected-color: $positive,
+
+    border: 2px solid #9f9f9f,
+    border-checked: 2px solid $positive,
+
+    border-focus: 2px solid $positive,
+    border-focus-checked: 2px solid $positive,
+
+    border-hover: 2px solid $positive,
+    border-hover-checked: 2px solid $positive,
+
+    background-color: #fff,
+
+    background-color-focus: #eee,
+    background-color-focus-checked: #eee,
+
+    background-color-hover: #eee,
+    background-color-hover-checked: #eee,
+
+    // Label Spacing
+    label-h-align: 48px,
+
+    // Input Vertical Position
+    input-v-align: -5px,
+
+    // Radio Radius
+    radio-radius: 50%,
+
+);

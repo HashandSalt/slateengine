@@ -1,0 +1,201 @@
+// ======================================================================
+// Typography
+// ======================================================================
+// ======================================================================
+// Root
+// ======================================================================
+
+:root {
+  @include responsive-type;
+}
+// ======================================================================
+// HTML
+// ======================================================================
+
+html {
+  @include baseline;
+  @include rem-baseline(100%);
+  line-height: $global-line-height;
+  color: $global-font-color;
+  font-family: $global-font-stack;
+  font-weight: $global-font-weight;
+  -webkit-font-smoothing: $webkit-smoothing;
+  text-rendering: optimizeLegibility;
+}
+// ======================================================================
+// Headings
+// ======================================================================
+
+h1 {
+  @include type-modular(gamma);
+  // @include type-free(42px, 24px, 48px, 48px, true);
+}
+
+h2 {
+  @include type-modular(delta);
+  // @include type-free(32px, 24px, 24px, 48px, true);
+}
+
+h3 {
+  @include type-modular(epsilon, $global-base-font-size * $global-line-height, 0);
+  // @include type-free(24px, 24px, 24px, 48px, true);
+}
+
+h4,
+h5,
+h6 {
+  @include type-modular(zeta, $global-base-font-size * $global-line-height, 0);
+  // @include type-free($global-base-font-size, 24px, 0, 24px, true);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $global-heading-color;
+  font-family: $global-heading-stack;
+  font-weight: $global-heading-weight;
+}
+// ======================================================================
+// Paragraphs
+// ======================================================================
+
+p {
+  @include type-modular(zeta, 0, $global-base-font-size * $global-line-height);
+  // @include type-free($global-base-font-size, 0, 24px, 24px, true);
+}
+// ======================================================================
+// Lists
+// ======================================================================
+
+ol,
+ul {
+  @include type-modular(zeta);
+  // @include type-free($global-base-font-size, 0, 24px, 24px, true);
+  ol {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  ul {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+dl {
+  @include type-modular(zeta);
+  // @include type-free($global-base-font-size, 0, 24px, 24px, true);
+  dt {
+    font-weight: $semibold;
+  }
+
+  dd {
+    font-style: italic;
+  }
+}
+// ======================================================================
+// Tables
+// ======================================================================
+
+table {
+  @include table($default-table);
+}
+// ======================================================================
+// Quotes
+// ======================================================================
+
+blockquote {
+  @include rem(padding, 18px);
+  font-style: italic;
+  margin: 0;
+  background-color: #eee;
+
+  p {
+    @include type-modular(zeta, 0, 0);
+    // @include type-free($global-base-font-size, 0, 0, 24px, true);
+  }
+}
+
+blockquote > p {
+  padding: 0;
+}
+// ======================================================================
+// Misc
+// ======================================================================
+
+a {
+  color: $link;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+hr {
+  border: 0;
+  border-top: $global-hr-style;
+  display: block;
+  height: 1px;
+  padding: 0;
+}
+
+sub,
+sup {
+  position: relative;
+  top: -.4rem;
+  vertical-align: baseline;
+}
+
+sub {
+  top: .4rem;
+}
+
+b {
+  line-height: 1;
+}
+
+small {
+  line-height: 1;
+}
+
+strong {
+  font-weight: $semibold;
+  color: $dark;
+}
+
+cite,
+dfn,
+em,
+q {
+  line-height: $global-line-height;
+}
+
+code {
+  @include type-free(14px, 0, 24px, 24px, true);
+}
+
+kbd {
+  margin-bottom: 1px;
+  padding: 0;
+  position: relative;
+  top: -1px;
+}
+
+pre {
+  @include rem(padding, 12px) @include rem(border-radius, 4px);
+  @include type-free(14px, 0, 24px, 24px, true);
+  background-color: $dark;
+  color: $bright;
+  font-weight: $bold;
+  font-family: $terminal;
+  white-space: pre;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  white-space: pre\9;
+}

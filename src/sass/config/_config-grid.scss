@@ -1,0 +1,51 @@
+// ======================================================================
+// Grid
+// ======================================================================
+
+/// Grid Total Columns
+$total-columns: 12;
+
+/// Grid Total Width
+$total-width: 100%;
+
+/// Grid Gutter Width
+$gutter-width: 2%;
+
+/// Grid Column Bottom Spacing
+$column-bottom-spacing: 24px;
+
+/// Grid Container margin
+$container-margin: 2%;
+
+/// Class to use for rows
+$class-container: 'row';
+
+/// Class to use for columns
+$class-column: 'col';
+
+/// Class to use for push
+$class-push: 'push';
+
+/// Center Containers
+$center-containers: true;
+
+/// Center Containers Max Width
+$center-container-max-width: 1140px;
+
+/// Breakpoint - tiny
+$bp-tiny: 320px;
+
+/// Breakpoint - xsmall
+$bp-xsmall: 480px;
+
+/// Breakpoint - small
+$bp-small: 640px;
+
+/// Breakpoint - medium
+$bp-medium: 800px;
+
+/// Breakpoint - large
+$bp-large: 960px;
+
+/// Breakpoint - xl
+$bp-xl: 1140px;

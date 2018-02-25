@@ -1,0 +1,84 @@
+// ======================================================================
+// Gridler Defaults
+// ======================================================================
+
+/// Gridler Mixin - Class to use for the columns
+$gridler-element: $class-column;
+
+// Breakpoints
+
+/// Gridler Mixin - Small column breakpoint
+$gridler-sm: $bp-small;
+
+/// Gridler Mixin - Medium column breakpoint
+$gridler-me: $bp-medium;
+
+/// Gridler Mixin - Large column breakpoint
+$gridler-lg: $bp-large;
+
+// Columns
+
+/// Gridler Mixin - Small column count
+$gridler-sm-c: 6;
+
+/// Gridler Mixin - Medium column count
+$gridler-me-c: 4;
+
+/// Gridler Mixin - Large column count
+$gridler-lg-c: 3;
+
+/// Gridler Mixin - Spacing below each column
+$gridler-column-bottom-spacing: $column-bottom-spacing;
+
+// ======================================================================
+// Holy Grail Defaults
+// ======================================================================
+
+/// Holy Grail Left Sidebar Element Class
+$holygrail-left-element: 'left';
+
+/// Holy Grail Middle Class
+$holygrail-middle-element: 'middle';
+
+/// Holy Grail Right Sidebar Class
+$holygrail-right-element: 'right';
+
+/// Holy Grail Left Sidebar Column Width
+$holygrail-left-column: 3;
+
+/// Holy Grail middle Sidebar Column Width
+$holygrail-middle-column: 5;
+
+/// Holy Grail right Sidebar Column Width
+$holygrail-right-column: 4;
+
+/// Holy Grail Breakpoint
+$holygrail-breakpoint: $bp-medium;
+
+/// Holy Grail Bottom Spacing
+$holygrail-column-bottom-spacing: $column-bottom-spacing;
+
+// ======================================================================
+// Flank
+// ======================================================================
+
+/// Flank Direction
+$flankdir: 'right';
+
+/// Flank Main Class
+$flank-main-element: 'main';
+
+/// Flank Flank Class
+$flank-flank-element: 'flank';
+
+/// Flank Main Column Width
+$flank-main-column: 8;
+
+/// Flank Column Width
+$flank-flank-column: 4;
+
+/// Flank Breakpoint
+$flank-breakpoint: $bp-medium;
+
+/// Flank Bottom Spacing
+$flank-column-bottom-spacing: $column-bottom-spacing;

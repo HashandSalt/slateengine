@@ -1,0 +1,37 @@
+{
+  "name": "slateengine",
+  "version": "0.5.1",
+  "description": "A build engine for Kirby CMS",
+  "author": "Hash&Salt",
+  "email": "hello@hashandsalt.com",
+  "license": "MIT",
+  "config": {
+    "webpack": "node_modules/laravel-mix/setup/webpack.config.js",
+    "favout": "public/assets/favicon"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "yarn watch",
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=$npm_package_config_webpack",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=$npm_package_config_webpack",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=$npm_package_config_webpack",
+    "deploy:live:sim": "./deploy live",
+    "deploy:live": "./deploy live go",
+    "deploy:staging:sim": "./deploy staging",
+    "deploy:staging": "./deploy staging go",
+    "content:sync:sim": "./deploy sync",
+    "content:sync": "./deploy sync go",
+    "postinstall": "yarn start"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "browser-sync": "^2.21.0",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "cross-env": "^5.1.3",
+    "favicons-webpack-plugin": "^0.0.7",
+    "laravel-mix": "^2.0.0",
+    "normalize.css": "^8.0.0",
+    "slatecore": "https://HashAndSalt@bitbucket.org/HashAndSalt/slate-engine-core-2.git",
+    "webpack-spritesmith": "^0.4.0"
+  }
+}

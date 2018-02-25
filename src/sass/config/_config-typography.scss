@@ -1,0 +1,151 @@
+// ======================================================================
+// Typography Setup
+// ======================================================================
+
+// Basic Setup
+// ======================================================================
+
+/// Enable Type Debug
+$type-debug: false;
+
+// Basic Setup
+// ======================================================================
+
+/// Set Global Font size
+$global-base-font-size: 18px;
+
+/// Set Global Line height
+$global-line-height: 1.75;
+
+/// Set Global REM Fallback
+$rem-fallback: true;
+
+/// Set Global PX units only
+$rem-px-only: false;
+
+/// Set Global line-heights with no units
+$unitless-lineheight: true;
+
+/// The ratio used to generate sizes and margins on heading tags
+$type-ratio: $perfect-fourth;
+
+/// Toggle percenatage based font scaling based on screen size.
+$responsive-text: true;
+
+/// Global Font Smoothing
+$webkit-smoothing: antialiased;
+
+// Modular Steps
+// ======================================================================
+
+/// Modular Stepping Multipliers
+$modular-step-alpha: 5;
+$modular-step-beta: 4;
+$modular-step-gamma: 3;
+$modular-step-delta: 2;
+$modular-step-epsilon: 1;
+$modular-step-zeta: 0;
+$modular-step-eta: -1;
+$modular-step-theta: -2;
+$modular-step-iota: -3;
+
+// Font Weights
+// ======================================================================
+
+/// Thin
+$thin: 100;
+
+/// Extra light
+$extralight: 200;
+
+/// Light
+$light: 300;
+
+/// Regular
+$regular: 400;
+
+/// Medium
+$medium: 500;
+
+/// Semibold
+$semibold: 600;
+
+/// Bold
+$bold: 700;
+
+/// Extra Bold
+$extra-bold: 800;
+
+/// Black
+$black: 900;
+
+// Global font styles
+// ======================================================================
+
+/// Global Font Stack
+$global-font-stack: $gillsans;
+
+/// Global Font Weight
+$global-font-weight: $light;
+
+/// Global Font Color
+$global-font-color: $jet;
+
+// Global heading font styles
+// ======================================================================
+
+/// Heading Font Stack
+$global-heading-stack: $gillsans;
+
+/// Heading Font Color
+$global-heading-weight: $semibold;
+
+/// Heading Font Weight
+$global-heading-color: $dark;
+
+/// Custom Font Path
+$custom-font-path: '/assets/fonts/';
+
+// Links
+// ======================================================================
+
+/// Link Color
+$link: $primary;
+
+/// Link Hover Color
+$link-hover: $primary;
+
+/// Link Hover Color
+$link-hover-decoration: none;
+
+// Horizontal Rules
+// ======================================================================
+
+/// Horizontal Rule color and thickness
+$global-hr-style: 1px solid $primary;
+
+// ======================================================================
+// Responsive type scaling (set $responsive-text true for this)
+// Numbers match $perfect-fourth. Recalculate them for other ratios.
+// ======================================================================
+
+/// Base responsive font size for screens under $bp-tiny
+$rt-bp-base: 50%; // 8px
+
+/// Responsive font size for screens between $bp-tiny and $bp-xsmall
+$rt-bp-tiny: 62.5%; // 10px
+
+/// Responsive font size for screens between $bp-xsmall and $bp-small
+$rt-bp-xsmall: 75%; // 12px
+
+/// Responsive font size for screens between $bp-xmall and $bp-medium
+$rt-bp-small: 87.5%; // 14px
+
+/// Responsive font size for screens between $bp-medium and $bp-large
+$rt-bp-medium: 100%; // 16px
+
+/// Responsive font size for screens between $bp-large and $bp-xl
+$rt-bp-large: 100%; // 20px
+
+/// Responsive font size for screens between $bp-xl and above.
+$rt-bp-xl: 100%; // 22px

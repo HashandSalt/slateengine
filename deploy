@@ -1,0 +1,49 @@
+#!/bin/bash
+
+ERRORSTRING="Whoops! That didn't work. Have another go."
+if [ $# -eq 0 ]
+then
+  echo "$ERRORSTRING";
+
+elif [[ "$1" == "sync" ]]
+then
+  if [[ -z $2 ]]
+  then
+    echo "Running content sync from live dry-run"
+    rsync --dry-run -az --force --delete --progress --exclude-from=rsync_exclude.txt -e "ssh -p22" USER@12.34.5.678:/var/www/vhosts/domain.com/httpdocs/ ./public/
+  elif [[ "$2" == "go" ]]
+  then
+    echo "Running content sync from live actual"
+    rsync -az --force --delete --progress --exclude-from=rsync_exclude.txt -e "ssh -p22" USER@12.34.5.678:/var/www/vhosts/domain.com/httpdocs/ ./public/
+  else
+    echo "$ERRORSTRING";
+  fi
+
+elif [[ "$1" == "live" ]]
+then
+  if [[ -z $2 ]]
+  then
+    echo "Running live dry-run"
+    rsync --dry-run -az --force --delete --progress --exclude-from=rsync_exclude.txt -e "ssh -p22" ./public/ USER@12.34.5.678:/var/www/vhosts/domain.com/httpdocs
+  elif [[ "$2" == "go" ]]
+  then
+    echo "Running live actual deploy"
+    rsync -az --force --delete --progress --exclude-from=rsync_exclude.txt -e "ssh -p22" ./public/ USER@12.34.5.678:/var/www/vhosts/domain.com/httpdocs
+  else
+    echo "$ERRORSTRING";
+  fi
+
+elif [[ "$1" == "staging" ]]
+then
+  if [[ -z $2 ]]
+  then
+    echo "Running staging dry-run"
+    rsync --dry-run -az --force --delete --progress --exclude-from=rsync_exclude.txt -e "ssh -p22" ./public/ USER@12.34.5.678:/var/www/vhosts/domain.com/subdomains/dev.domain.com
+  elif [[ "$2" == "go" ]]
+  then
+    echo "Running staging actual deploy"
+    rsync -az --force --delete --progress --exclude-from=rsync_exclude.txt -e "ssh -p22" ./public/ USER@12.34.5.678:/var/www/vhosts/domain.com/subdomains/dev.domain.com
+  else
+    echo "$ERRORSTRING";
+  fi
+fi

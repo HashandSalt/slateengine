@@ -1,0 +1,70 @@
+// ======================================================================
+// Tables
+// ======================================================================
+
+/// Default Table Skin.
+
+$default-table: (
+    fontfamily: $global-font-stack,
+    layout: fixed,
+    background: #fff,
+    borderwidth: 1px 1px 1px 1px,
+    bordercolor: #fff #fff #fff #fff,
+    borderstyle: solid solid solid solid,
+    margin: 24px 0 24px 0,
+    bordercollapse: collapse,
+    width: 100%,
+
+    caption: (
+        background: #fff,
+        padding: 24px 0,
+        fontfamily: inherit,
+        fontweight: $bold,
+        fontcolor: $global-font-color,
+        fontsize: 22px,
+        textalign: center,
+        borderwidth: 0 0 1px 0,
+        bordercolor: $bright $bright $bright $bright,
+        borderstyle: solid solid solid solid
+    ),
+    header: (
+        background: $bright,
+        padding: 16px 0,
+        fontfamily: inherit,
+        fontweight: $global-font-weight,
+        fontcolor: $global-font-color,
+        fontsize: 18px,
+        textalign: center,
+        verticalalign: middle,
+        borderwidth: 1px 1px 1px 1px,
+        bordercolor: #fff #fff #fff #fff,
+        borderstyle: solid solid solid solid
+    ),
+    body: (
+        background: $bright,
+        oddbackground: $bright,
+        evenbackground: #fff,
+        padding: 8px 0,
+        fontfamily: inherit,
+        fontweight: $global-font-weight,
+        fontcolor: $global-font-color,
+        fontsize: 18px,
+        textalign: center,
+        verticalalign: middle,
+        borderwidth: 1px 1px 1px 1px,
+        bordercolor: #fff #fff #fff #fff,
+        borderstyle: solid solid solid solid
+    ),
+    footer: (
+        background: $bright,
+        padding: 8px 0,
+        fontfamily: inherit,
+        fontweight: $global-font-weight,
+        fontcolor: $global-font-color,
+        fontsize: 18px,
+        textalign: center,
+        borderwidth: 1px 1px 1px 1px,
+        bordercolor: #fff #fff #fff #fff,
+        borderstyle: solid solid solid solid
+    ),
+);

@@ -1,0 +1,243 @@
+// ======================================================================
+// Buttons
+// ======================================================================
+
+// Button Themes
+// ----------------------------------------------------------------------
+
+// Default Button Theme
+$button-default: (
+
+  use-borders: true,
+
+  default: $primary,
+  hover: darken($primary, 15%),
+  focus: darken($primary, 20%),
+  active: darken($primary, 10%),
+  disabled: $disabled,
+
+  font-family: inherit,
+  textlight: $bright,
+  textdark: $dark,
+  textweight: $semibold,
+  font-size: $global-base-font-size,
+  textalign: center,
+  text-transform: uppercase,
+
+  border-left: 2px solid $medium,
+  border-right: 2px solid $medium,
+  border-top: 2px solid $medium,
+  border-bottom: 2px solid $medium,
+
+  border-hover-left: 2px solid $dark,
+  border-hover-right: 2px solid $dark,
+  border-hover-top: 2px solid $dark,
+  border-hover-bottom: 2px solid $dark,
+
+  border-focus-left: 2px solid $dark,
+  border-focus-right: 2px solid $dark,
+  border-focus-top: 2px solid $dark,
+  border-focus-bottom: 2px solid $dark,
+
+  border-disabled-left: 2px solid darken($disabled, 20%),
+  border-disabled-right: 2px solid darken($disabled, 20%),
+  border-disabled-top: 2px solid darken($disabled, 20%),
+  border-disabled-bottom: 2px solid darken($disabled, 20%),
+
+  height: 50px,
+  margin: 0 0 27px 0,
+  padding: 0 9px,
+  rounded: 0,
+
+  display: inline-block,
+  boxsizing: content-box
+
+);
+
+// Positive Button Theme
+$button-positive: (
+
+  use-borders: true,
+
+  default: $positive,
+  hover: darken($positive, 15%),
+  focus: darken($positive, 20%),
+  active: darken($positive, 10%),
+  disabled: $disabled,
+
+  font-family: inherit,
+  textlight: $bright,
+  textdark: $dark,
+  textweight: $semibold,
+  font-size: $global-base-font-size,
+  textalign: center,
+  text-transform: uppercase,
+
+  border-left: 2px solid darken($positive, 10%),
+  border-right: 2px solid darken($positive, 10%),
+  border-top: 2px solid darken($positive, 10%),
+  border-bottom: 2px solid darken($positive, 10%),
+
+  border-hover-left: 2px solid darken($positive, 15%),
+  border-hover-right: 2px solid darken($positive, 15%),
+  border-hover-top: 2px solid darken($positive, 15%),
+  border-hover-bottom: 2px solid darken($positive, 15%),
+
+  border-focus-left: 2px solid $dark,
+  border-focus-right: 2px solid $dark,
+  border-focus-top: 2px solid $dark,
+  border-focus-bottom: 2px solid $dark,
+
+  border-disabled-left: 2px solid darken($disabled, 20%),
+  border-disabled-right: 2px solid darken($disabled, 20%),
+  border-disabled-top: 2px solid darken($disabled, 20%),
+  border-disabled-bottom: 2px solid darken($disabled, 20%),
+
+  height: 50px,
+  margin: 0 0 27px 0,
+  padding: 0 9px,
+  rounded: 0,
+
+  display: inline-block,
+  boxsizing: content-box
+
+);
+
+// Negative Button Theme
+$button-negative: (
+
+  use-borders: true,
+
+  default: $negative,
+  hover: darken($negative, 15%),
+  focus: darken($negative, 20%),
+  active: darken($negative, 10%),
+  disabled: $disabled,
+
+  font-family: inherit,
+  textlight: $bright,
+  textdark: $dark,
+  textweight: $semibold,
+  font-size: $global-base-font-size,
+  textalign: center,
+  text-transform: uppercase,
+
+  border-left: 2px solid darken($negative, 10%),
+  border-right: 2px solid darken($negative, 10%),
+  border-top: 2px solid darken($negative, 10%),
+  border-bottom: 2px solid darken($negative, 10%),
+
+  border-hover-left: 2px solid darken($negative, 15%),
+  border-hover-right: 2px solid darken($negative, 15%),
+  border-hover-top: 2px solid darken($negative, 15%),
+  border-hover-bottom: 2px solid darken($negative, 15%),
+
+  border-focus-left: 2px solid $dark,
+  border-focus-right: 2px solid $dark,
+  border-focus-top: 2px solid $dark,
+  border-focus-bottom: 2px solid $dark,
+
+  border-disabled-left: 2px solid darken($disabled, 20%),
+  border-disabled-right: 2px solid darken($disabled, 20%),
+  border-disabled-top: 2px solid darken($disabled, 20%),
+  border-disabled-bottom: 2px solid darken($disabled, 20%),
+
+  height: 50px,
+  margin: 0 0 27px 0,
+  padding: 0 9px,
+  rounded: 0,
+
+  display: inline-block,
+  boxsizing: content-box
+
+);
+
+// Gradient Button Theme
+$button-gradient: (
+
+    use-borders: true,
+
+    font-family: inherit,
+    textlight: $bright,
+    textdark: $dark,
+    textweight: $semibold,
+    font-size: $global-base-font-size,
+    textalign: center,
+    text-transform: uppercase,
+
+    height: 50px,
+    margin: 0 0 27px 0,
+    padding: 0 9px,
+    rounded: 0,
+
+    display: inline-block,
+    boxsizing: content-box,
+
+    mode: 'ttb',
+    start-pos: 0%,
+    end-pos: 100%,
+
+    // Default Colors
+    start-color: $gradient-start,
+    end-color: $gradient-end,
+    // Hover Colors
+    start-color-hover: $gradient-start,
+    end-color-hover: darken($gradient-end, 10%),
+    // Focus Colors
+    start-color-focus: $gradient-start,
+    end-color-focus: darken($gradient-end, 10%),
+    // Active Colors
+    start-color-active: $gradient-start,
+    end-color-active: darken($gradient-end, 10%),
+    // Disabled Colors
+    start-color-disabled: $disabled,
+    end-color-disabled: darken($disabled, 30%),
+
+    border-left: 2px solid darken($gradient-start, 10%),
+    border-right: 2px solid darken($gradient-start, 10%),
+    border-top: 2px solid darken($gradient-start, 10%),
+    border-bottom: 2px solid darken($gradient-start, 10%),
+
+    border-hover-left: 2px solid darken($gradient-start, 15%),
+    border-hover-right: 2px solid darken($gradient-start, 15%),
+    border-hover-top: 2px solid darken($gradient-start, 15%),
+    border-hover-bottom: 2px solid darken($gradient-start, 15%),
+
+    border-focus-left: 2px solid $dark,
+    border-focus-right: 2px solid $dark,
+    border-focus-top: 2px solid $dark,
+    border-focus-bottom: 2px solid $dark,
+
+    border-disabled-left: 2px solid darken($disabled, 20%),
+    border-disabled-right: 2px solid darken($disabled, 20%),
+    border-disabled-top: 2px solid darken($disabled, 20%),
+    border-disabled-bottom: 2px solid darken($disabled, 20%),
+
+);
+
+// Button Icons
+// ----------------------------------------------------------------------
+
+// Button Icon Display
+$button-icons-display: inline-block;
+
+// Button Icon Left Spacing
+$button-icons-left-spacing: 0 8px 0 4px;
+
+// Button Icon Right Spacing
+$button-icons-right-spacing: 0 8px 0 4px;
+
+// Button Icon Weight
+$button-icons-weight: $semibold;
+
+// Button Math Icons
+$button-icons-math: false;
+
+// Button Solid Arrows Icons
+$button-icons-solid-arrows: false;
+
+// Button Dashed Arrows Icons
+$button-icons-dashed-arrows: false;
+
+// Button Dashed Chevrons
+$button-icons-chevrons: false;
