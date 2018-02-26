@@ -31,7 +31,7 @@
     "favicons-webpack-plugin": "^0.0.7",
     "laravel-mix": "^2.0.0",
     "normalize.css": "^8.0.0",
-    "slatecore": "https://HashAndSalt@bitbucket.org/HashAndSalt/slate-engine-core-2.git",
+    "slatecore": "^5.2.5",
     "webpack-spritesmith": "^0.4.0"
   }
 }

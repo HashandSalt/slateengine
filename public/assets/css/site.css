@@ -645,7 +645,7 @@ small {
 
 strong {
   font-weight: 600;
-  color: #414141;
+  color: #3c3c3c;
 }
 
 cite,
@@ -684,7 +684,7 @@ pre {
   margin-top: 0;
   margin-bottom: 24px;
   margin-bottom: 1.3333333333rem;
-  background-color: #414141;
+  background-color: #3c3c3c;
   color: #eee;
   font-weight: 700;
   font-family: Monaco, "Lucida Sans Typewriter", Consolas, "Courier New", monospace;
