@@ -1,7 +1,7 @@
 {
   "name": "slateengine",
-  "version": "0.5.1",
-  "description": "A build engine for Kirby CMS",
+  "version": "0.5.2",
+  "description": "A build engine for Slate",
   "author": "Hash&Salt",
   "email": "hello@hashandsalt.com",
   "license": "MIT",
