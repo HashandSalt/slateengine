@@ -1,5 +1,5 @@
 // ======================================================================
-// kirbykit.dev | hello@hashandsalt.com
+// Some Project http://yourdomain.com | you@domain.com
 // ======================================================================
 
 // window.$ = window.jQuery = require('jquery');
