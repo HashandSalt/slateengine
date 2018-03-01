@@ -4,6 +4,13 @@
   "description": "A build engine for Slate",
   "author": "Hash&Salt",
   "email": "hello@hashandsalt.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HashandSalt/slateengine"
+  },
+  "bugs": {
+    "url": "https://github.com/HashandSalt/slateengine/issues"
+  },
   "license": "MIT",
   "config": {
     "webpack": "node_modules/laravel-mix/setup/webpack.config.js",
@@ -31,7 +38,7 @@
     "favicons-webpack-plugin": "^0.0.7",
     "laravel-mix": "^2.0.0",
     "normalize.css": "^8.0.0",
-    "slatecore": "^5.2.5",
+    "slatecore": "^5.2.7",
     "webpack-spritesmith": "^0.4.0"
   }
 }
