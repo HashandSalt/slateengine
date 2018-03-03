@@ -8,7 +8,7 @@ Assumes you have Yarn & Node installed. NPM will also work of course, but Yarn i
 
 ```sh
 $ cd your/project/folder
-$ git clone slateengine && yarn install -D
+$ git clone https://github.com/HashandSalt/slateengine.git && yarn install -D
 ```
 Additionally, configure the `webpack.mix.js` file to your liking. You can find the docs for Mix [here](https://laravel.com/docs/5.6/mix).
 
