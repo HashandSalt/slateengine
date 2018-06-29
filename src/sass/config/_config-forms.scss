@@ -5,7 +5,7 @@
 /// Custom Radio & Check Boxes
 /// ---------------------------------------------------------------------
 
-$form-skin-default: (
+$form-skin: (
   /// Components
   components: (
     baseform: true,
@@ -17,12 +17,12 @@ $form-skin-default: (
   /// Form Element
   form: (
     margin: 0 0 0 0,
-    padding: 0 27px,
+    padding: 0,
     color: $dark,
   ),
   /// Legend Element
   legend: (
-    margin: 0 0 27px 0,
+    margin: 0 0 24px 0,
     line-height: $global-line-height,
   ),
   /// Fieldset Element
@@ -37,9 +37,9 @@ $form-skin-default: (
   ),
   /// Skins
   skins: (
-    inputs: $input-default,
-    addons: $addon-default,
-    select: $select-default,
-    validation: $validation-default,
+    inputs: $input-skin,
+    addons: $input-skin,
+    select: $input-skin,
+    validation: $input-skin,
   ),
 );
