@@ -35,10 +35,10 @@
     "browser-sync": "^2.21.0",
     "browser-sync-webpack-plugin": "^2.0.1",
     "cross-env": "^5.1.3",
-    "favicons-webpack-plugin": "^0.0.7",
+    "favicons-webpack-plugin": "^0.0.9",
     "laravel-mix": "^2.0.0",
     "normalize.css": "^8.0.0",
-    "slatecore": "^5.2.7",
+    "slatecore": "^6.0.2",
     "webpack-spritesmith": "^0.4.0"
   }
 }

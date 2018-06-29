@@ -12,10 +12,10 @@ $type-debug: false;
 // ======================================================================
 
 /// Set Global Font size
-$global-base-font-size: 18px;
+$global-base-font-size: 16px;
 
 /// Set Global Line height
-$global-line-height: 1.75;
+$global-line-height: 1.5;
 
 /// Set Global REM Fallback
 $rem-fallback: true;
@@ -89,7 +89,7 @@ $global-font-stack: $gillsans;
 $global-font-weight: $light;
 
 /// Global Font Color
-$global-font-color: $jet;
+$global-font-color: $dark;
 
 // Global heading font styles
 // ======================================================================
@@ -101,7 +101,7 @@ $global-heading-stack: $gillsans;
 $global-heading-weight: $semibold;
 
 /// Heading Font Weight
-$global-heading-color: $dark;
+$global-heading-color: $jet;
 
 /// Custom Font Path
 $custom-font-path: '/assets/fonts/';
@@ -145,7 +145,7 @@ $rt-bp-small: 87.5%; // 14px
 $rt-bp-medium: 100%; // 16px
 
 /// Responsive font size for screens between $bp-large and $bp-xl
-$rt-bp-large: 100%; // 20px
+$rt-bp-large: 125%; // 20px
 
 /// Responsive font size for screens between $bp-xl and above.
-$rt-bp-xl: 100%; // 22px
+$rt-bp-xl: 137.5%; // 22px

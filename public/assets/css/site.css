@@ -345,49 +345,49 @@ html *, html *:before, html *:after {
 }
 
 :root {
-  font-size: 56.25%;
+  font-size: 50%;
 }
 
 @media only screen and (min-width: 320px) {
   :root {
-    font-size: 70.3125%;
+    font-size: 62.5%;
   }
 }
 
 @media only screen and (min-width: 480px) {
   :root {
-    font-size: 84.375%;
+    font-size: 75%;
   }
 }
 
 @media only screen and (min-width: 640px) {
   :root {
-    font-size: 98.4375%;
+    font-size: 87.5%;
   }
 }
 
 @media only screen and (min-width: 800px) {
   :root {
-    font-size: 112.5%;
+    font-size: 100%;
   }
 }
 
 @media only screen and (min-width: 960px) {
   :root {
-    font-size: 112.5%;
+    font-size: 125%;
   }
 }
 
 @media only screen and (min-width: 1140px) {
   :root {
-    font-size: 112.5%;
+    font-size: 137.5%;
   }
 }
 
 html {
-  font-size: 112.5%;
-  line-height: 1.75;
-  color: #000;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #414141;
   font-family: "Gill Sans MT", "Gill Sans", Tahoma, Geneva, sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
@@ -395,31 +395,31 @@ html {
 }
 
 h1 {
-  font-size: 42.634674666px;
+  font-size: 37.897488592px;
   font-size: 2.368593037rem;
-  line-height: 1.4776704758;
-  margin-top: 31.5px;
-  margin-top: 1.75rem;
-  margin-bottom: 31.5px;
-  margin-bottom: 1.75rem;
+  line-height: 1.5;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
-  font-size: 31.984002px;
+  font-size: 28.430224px;
   font-size: 1.776889rem;
-  line-height: 1.9697347443;
-  margin-top: 31.5px;
-  margin-top: 1.75rem;
-  margin-bottom: 31.5px;
-  margin-bottom: 1.75rem;
+  line-height: 1.5;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
-  font-size: 23.994px;
+  font-size: 21.328px;
   font-size: 1.333rem;
-  line-height: 2.6256564141;
-  margin-top: 31.5px;
-  margin-top: 1.75rem;
+  line-height: 1.5;
+  margin-top: 24px;
+  margin-top: 1.5rem;
   margin-bottom: 0;
   margin-bottom: 0;
 }
@@ -427,11 +427,11 @@ h3 {
 h4,
 h5,
 h6 {
-  font-size: 18px;
+  font-size: 16px;
   font-size: 1rem;
-  line-height: 1.75;
-  margin-top: 31.5px;
-  margin-top: 1.75rem;
+  line-height: 1.5;
+  margin-top: 24px;
+  margin-top: 1.5rem;
   margin-bottom: 0;
   margin-bottom: 0;
 }
@@ -442,30 +442,30 @@ h3,
 h4,
 h5,
 h6 {
-  color: #414141;
+  color: #000;
   font-family: "Gill Sans MT", "Gill Sans", Tahoma, Geneva, sans-serif;
   font-weight: 600;
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   font-size: 1rem;
-  line-height: 1.75;
+  line-height: 1.5;
   margin-top: 0;
   margin-top: 0;
-  margin-bottom: 31.5px;
-  margin-bottom: 1.75rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 ol,
 ul {
-  font-size: 18px;
+  font-size: 16px;
   font-size: 1rem;
-  line-height: 1.75;
-  margin-top: 31.5px;
-  margin-top: 1.75rem;
-  margin-bottom: 31.5px;
-  margin-bottom: 1.75rem;
+  line-height: 1.5;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 ol ol,
@@ -481,13 +481,13 @@ ul ul {
 }
 
 dl {
-  font-size: 18px;
+  font-size: 16px;
   font-size: 1rem;
-  line-height: 1.75;
-  margin-top: 31.5px;
-  margin-top: 1.75rem;
-  margin-bottom: 31.5px;
-  margin-bottom: 1.75rem;
+  line-height: 1.5;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 dl dt {
@@ -500,7 +500,7 @@ dl dd {
 
 table {
   border-width: 1px 1px 1px 1px;
-  border-width: 0.0555555556rem 0.0555555556rem 0.0555555556rem 0.0555555556rem;
+  border-width: 0.0625rem 0.0625rem 0.0625rem 0.0625rem;
   font-family: "Gill Sans MT", "Gill Sans", Tahoma, Geneva, sans-serif;
   table-layout: fixed;
   border-color: #fff #fff #fff #fff;
@@ -513,15 +513,15 @@ table {
 
 table caption {
   padding: 24px 0;
-  padding: 1.3333333333rem 0;
+  padding: 1.5rem 0;
   font-size: 22px;
-  font-size: 1.2222222222rem;
+  font-size: 1.375rem;
   border-width: 0 0 1px 0;
-  border-width: 0 0 0.0555555556rem 0;
+  border-width: 0 0 0.0625rem 0;
   background: #fff;
   font-family: inherit;
   font-weight: 700;
-  color: #000;
+  color: #414141;
   text-align: center;
   border-color: #eee #eee #eee #eee;
   border-style: solid solid solid solid;
@@ -530,15 +530,15 @@ table caption {
 table thead td,
 table thead th {
   border-width: 1px 1px 1px 1px;
-  border-width: 0.0555555556rem 0.0555555556rem 0.0555555556rem 0.0555555556rem;
+  border-width: 0.0625rem 0.0625rem 0.0625rem 0.0625rem;
   font-size: 18px;
-  font-size: 1rem;
+  font-size: 1.125rem;
   padding: 16px 0;
-  padding: 0.8888888889rem 0;
+  padding: 1rem 0;
   background: #eee;
   font-family: inherit;
   font-weight: 300;
-  color: #000;
+  color: #414141;
   text-align: center;
   border-color: #fff #fff #fff #fff;
   border-style: solid solid solid solid;
@@ -546,15 +546,15 @@ table thead th {
 
 table tbody td {
   font-size: 18px;
-  font-size: 1rem;
+  font-size: 1.125rem;
   border-width: 1px 1px 1px 1px;
-  border-width: 0.0555555556rem 0.0555555556rem 0.0555555556rem 0.0555555556rem;
+  border-width: 0.0625rem 0.0625rem 0.0625rem 0.0625rem;
   padding: 8px 0;
-  padding: 0.4444444444rem 0;
+  padding: 0.5rem 0;
   background: #eee;
   font-family: inherit;
   font-weight: 300;
-  color: #000;
+  color: #414141;
   text-align: center;
   border-color: #fff #fff #fff #fff;
   border-style: solid solid solid solid;
@@ -570,15 +570,15 @@ table tbody tr:nth-child(odd) td {
 
 table tfoot td {
   font-size: 18px;
-  font-size: 1rem;
+  font-size: 1.125rem;
   border-width: 1px 1px 1px 1px;
-  border-width: 0.0555555556rem 0.0555555556rem 0.0555555556rem 0.0555555556rem;
+  border-width: 0.0625rem 0.0625rem 0.0625rem 0.0625rem;
   padding: 8px 0;
-  padding: 0.4444444444rem 0;
+  padding: 0.5rem 0;
   background: #eee;
   font-family: inherit;
   font-weight: 300;
-  color: #000;
+  color: #414141;
   text-align: center;
   border-color: #fff #fff #fff #fff;
   border-style: solid solid solid solid;
@@ -586,16 +586,16 @@ table tfoot td {
 
 blockquote {
   padding: 18px;
-  padding: 1rem;
+  padding: 1.125rem;
   font-style: italic;
   margin: 0;
   background-color: #eee;
 }
 
 blockquote p {
-  font-size: 18px;
+  font-size: 16px;
   font-size: 1rem;
-  line-height: 1.75;
+  line-height: 1.5;
   margin-top: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -645,24 +645,24 @@ small {
 
 strong {
   font-weight: 600;
-  color: #3c3c3c;
+  color: #414141;
 }
 
 cite,
 dfn,
 em,
 q {
-  line-height: 1.75;
+  line-height: 1.5;
 }
 
 code {
   font-size: 14px;
-  font-size: 0.7777777778rem;
+  font-size: 0.875rem;
   line-height: 1.7142857143;
   margin-top: 0;
   margin-top: 0;
   margin-bottom: 24px;
-  margin-bottom: 1.3333333333rem;
+  margin-bottom: 1.5rem;
 }
 
 kbd {
@@ -674,17 +674,17 @@ kbd {
 
 pre {
   padding: 12px;
-  padding: 0.6666666667rem;
+  padding: 0.75rem;
   border-radius: 4px;
-  border-radius: 0.2222222222rem;
+  border-radius: 0.25rem;
   font-size: 14px;
-  font-size: 0.7777777778rem;
+  font-size: 0.875rem;
   line-height: 1.7142857143;
   margin-top: 0;
   margin-top: 0;
   margin-bottom: 24px;
-  margin-bottom: 1.3333333333rem;
-  background-color: #3c3c3c;
+  margin-bottom: 1.5rem;
+  background-color: #414141;
   color: #eee;
   font-weight: 700;
   font-family: Monaco, "Lucida Sans Typewriter", Consolas, "Courier New", monospace;
@@ -697,7 +697,7 @@ pre {
 
 .middle {
   max-width: 1140px;
-  max-width: 63.3333333333rem;
+  max-width: 71.25rem;
   margin-left: auto;
   margin-right: auto;
   width: 96%;
