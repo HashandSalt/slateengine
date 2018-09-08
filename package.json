@@ -1,6 +1,6 @@
 {
   "name": "slateengine",
-  "version": "0.5.2",
+  "version": "6.0.3",
   "description": "A build engine for Slate",
   "author": "Hash&Salt",
   "email": "hello@hashandsalt.com",
@@ -38,7 +38,7 @@
     "favicons-webpack-plugin": "^0.0.9",
     "laravel-mix": "^2.0.0",
     "normalize.css": "^8.0.0",
-    "slatecore": "^6.0.2",
+    "slatecore": "^6.0.3",
     "webpack-spritesmith": "^0.4.0"
   }
 }
